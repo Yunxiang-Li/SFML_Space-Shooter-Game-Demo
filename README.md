@@ -36,7 +36,7 @@ Needs to be updated...
 
 ## Structure
 
-The whole project in Unity contains two main folders, **Assets** folder and **Package** folder.
+The whole project contains three main folders, **Media** folder, **include** folder and **src** folder.
 
 Under **src** folder, there are altogether **4** `java` classes:
 
