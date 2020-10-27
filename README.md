@@ -38,15 +38,9 @@ Needs to be updated...
 
 The whole project contains three main folders, **Media** folder, **include** folder and **src** folder.
 
-Under **src** folder, there are altogether **4** `java` classes:
+Under **src** folder, there are altogether **10** `C++` source files:
 
-1. `Vertex` class represents a position in 3d space.
-
-2. `Triangle` class represents a triangle binding three vertices  together and stores its color.
-
-3. `Matrix3` class represents a 3D Matrix which will help us do matrix-matrix and vector-matrix multiplications.
-
-4. `DemoViewer` class is our main entrance of the render program, most of processes are made here.
+Needs to be updated...
 
 ## Maintainers
 
