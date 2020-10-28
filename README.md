@@ -16,9 +16,8 @@ A simple 2d space shooter game created by C++ and SFML(Simple and Fast Multimedi
 
 ## Background
 
-3D render engines that are nowdays used in games. I write a very simple 3d render engine demo so that it will really help me understand some fundamental principles which are also used for modern render engines.
-
-Through making this render engine, I learn about orthographic projection, simple triangle rasterization, z-buffering, flat shading and subdividing a tetrahedron to a sphere.
+Unlike game engines such like Unity or Unreal, building game by pure C++ is not very convenient. But with the help of SFML(Simple and Fast Multimedia Library), we can build a 2d game from scratch. 
+Game development comprises the combination of many different aspects such as game logics, graphics, audio, user input, physics and much more. I want to learn and enjoy this whole process of game development by this project.
 
 ## Exhibition
 
@@ -48,13 +47,9 @@ The whole project contains four main folders, **Screenshots and GIFs** folder, *
 
 **Screenshots and GIFs** folder contains all screenshots and GIFs needed for exhibition.
 
-**src** folder contains altogether **10** `C++` source files:
+(Needs to be updated...) **src** folder contains altogether **10** `C++` source files:
 
-Needs to be updated...
-
-**include** folder contains altogether **15** `C++` header files:
-
-Needs to be updated...
+(Needs to be updated...) **include** folder contains altogether **15** `C++` header files:
 
 **Media** folder contains all **media** files(fonts, pictures, textures).
 
