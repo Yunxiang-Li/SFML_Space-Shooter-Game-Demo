@@ -38,7 +38,7 @@ Needs to be updated...
 
 (Here should be an UML model to display the structure of the program).
 
-The whole project contains four main folders, **Media** folder, **include** folder and **src** folder.
+The whole project contains four main folders, **Screenshots and GIFs** folder, **Media** folder, **include** folder and **src** folder.
 
 Under **src** folder, there are altogether **10** `C++` source files:
 
