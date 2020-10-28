@@ -40,9 +40,9 @@ Needs to be updated...
 
 The whole project contains four main folders, **Screenshots and GIFs** folder, **Media** folder, **include** folder and **src** folder.
 
-Under **Screenshots and GIFs** folder, there are all screenshots and GIFs needed for exhibition.
+**Screenshots and GIFs** folder contains all screenshots and GIFs needed for exhibition.
 
-Under **src** folder, there are altogether **10** `C++` source files:
+**src** folder contains altogether **10** `C++` source files:
 
 Needs to be updated...
 
