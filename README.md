@@ -36,6 +36,8 @@ Needs to be updated...
 
 ## Structure
 
+(Here should be an UML model to display the structure of the program).
+
 The whole project contains three main folders, **Media** folder, **include** folder and **src** folder.
 
 Under **src** folder, there are altogether **10** `C++` source files:
