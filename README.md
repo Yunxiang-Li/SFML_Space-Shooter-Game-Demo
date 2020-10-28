@@ -26,15 +26,17 @@ Needs to be updated...
 
 ## Install
 
-I Use C++ language, SFML(Simple and Fast Multimedia Library) and CLion (an IDE) under Windows 10 environment for this project.
+I Use C++ language, [SFML(Simple and Fast Multimedia Library)](https://www.sfml-dev.org/index.php) and CLion (an IDE) under Windows 10 environment for this project.
 
 [CLion Download](https://www.jetbrains.com/clion/download/#section=windows)<br>
 
 ## Ideas
 
-1. Complete main game loop and set time fixed for each frame.
+1. Complete main game loop by processing each event and real time input while window is open and set time fixed for each frame using sf::Clock and sf::Time class provided by SFML.
 
 2. Use C++ template to build resource holder for each type of resource(Textures, Fonts and so on).
+
+3. Use multiple inheritance to build the game world. SceneNode class as a virtual base class which controls the whole game world and each layer's entrance(for instance, background layer, air layer and son on). SpriteNode class is a derived class which inherits SceneNode class
 
 ## Structure
 
