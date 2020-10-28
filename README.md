@@ -26,13 +26,15 @@ Needs to be updated...
 
 ## Install
 
-I Use C++ language and CLion (an IDE) under Windows 10 environment for this project.
+I Use C++ language, SFML(Simple and Fast Multimedia Library) and CLion (an IDE) under Windows 10 environment for this project.
 
 [CLion Download](https://www.jetbrains.com/clion/download/#section=windows)<br>
 
 ## Ideas
 
-Needs to be updated...
+1. Complete main game loop and set time fixed for each frame.
+
+2. Use C++ template to build resource holder for each type of resource(Textures, Fonts and so on).
 
 ## Structure
 
