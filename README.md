@@ -17,6 +17,7 @@ A simple 2d space shooter game created by C++ and SFML(Simple and Fast Multimedi
 ## Background
 
 Unlike game engines such like Unity or Unreal, building game by pure C++ is not very convenient. But with the help of SFML(Simple and Fast Multimedia Library), we can build a 2d game from scratch. 
+
 Game development comprises the combination of many different aspects such as game logics, graphics, audio, user input, physics and much more. I want to learn and enjoy this whole process of game development by this project.
 
 ## Exhibition
