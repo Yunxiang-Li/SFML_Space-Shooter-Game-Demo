@@ -46,7 +46,7 @@ Under **src** folder, there are altogether **10** `C++` source files:
 
 Needs to be updated...
 
-Under **include** folder, there are altogether **15** `C++` header files:
+**include** folder contains altogether **15** `C++` header files:
 
 Needs to be updated...
 
