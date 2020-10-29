@@ -46,9 +46,9 @@ I Use C++ language, [SFML(Simple and Fast Multimedia Library)](https://www.sfml-
 
 The whole project contains four main folders, **Screenshots and GIFs** folder, **Media** folder, **include** folder and **src** folder.
 
-1. **Screenshots and GIFs** folder contains all screenshots and GIFs needed for exhibition.
+**Screenshots and GIFs** folder contains all screenshots and GIFs needed for exhibition.
 
-2. (Needs to be updated...) **src** folder contains altogether **10** `C++` source files:
+(Needs to be updated...) **src** folder contains altogether **10** `C++` source files:
 
   1. **Aircraft.cpp**
 
@@ -62,9 +62,9 @@ The whole project contains four main folders, **Screenshots and GIFs** folder, *
 
   6. **Player.cpp**
 
-3. (Needs to be updated...) **include** folder contains altogether **15** `C++` header files:
+(Needs to be updated...) **include** folder contains altogether **15** `C++` header files:
 
-4. **Media** folder contains all **media** files(fonts, pictures, textures).
+**Media** folder contains all **media** files(fonts, pictures, textures).
 
 ## Maintainers
 
