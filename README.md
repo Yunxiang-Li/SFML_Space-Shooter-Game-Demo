@@ -32,11 +32,11 @@ I Use C++ language, [SFML(Simple and Fast Multimedia Library)](https://www.sfml-
 
 ## Ideas
 
-1. Complete main game loop by processing each event and real time input while window is open and set time fixed for each frame using sf::Clock and sf::Time class provided by SFML.
+1. Complete main game loop by processing each event and real time input while window is open and set time fixed for each frame using `sf::Clock` and `sf::Time` class provided by SFML.
 
 2. Use C++ template and inline files to build resource holder for each type of resource(Textures, Fonts and so on).
 
-3. Use multiple inheritance to build the game world. SceneNode class as a virtual base class which controls the whole game world and each layer's entrance(for instance, background layer, air layer and son on). SpriteNode class is a derived class which inherits SceneNode class and take control of background settings. Entity class is a intermediate class which inherits SceneNode class and represents each entity in the game. Aircraft class is a derived class which inherits Entity class and take control of all aircraft objects' behaviour.
+3. Use multiple inheritance to build the game world. `SceneNode` class as a virtual base class which controls the whole game world and each layer's entrance(for instance, background layer, air layer and son on). `SpriteNode` class is a derived class which inherits `SceneNode` class and take control of background settings. `Entity` class is a intermediate class which inherits `SceneNode` class and represents each entity in the game. `Aircraft` class is a derived class which inherits `Entity` class and take control of all aircraft objects' behaviour.
 
 4. Use Command pattern to handle each user event or real time input as a command, push each command into the command queue and execute and pop each front command one by one. 
 
