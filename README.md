@@ -68,6 +68,8 @@ The whole project contains four main folders, **Screenshots and GIFs** folder, *
 
 9. **World.cpp**
 
+10. **main.cpp**
+
 (Needs to be updated...) **include** folder contains altogether **15** `C++` header files:
 
 **Media** folder contains all **media** files(fonts, pictures, textures).
