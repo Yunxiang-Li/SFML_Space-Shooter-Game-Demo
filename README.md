@@ -58,6 +58,8 @@ The whole project contains four main folders, **Screenshots and GIFs** folder, *
 
 4. **Entity.cpp**
 
+5. **Game.cpp**
+
 (Needs to be updated...) **include** folder contains altogether **15** `C++` header files:
 
 **Media** folder contains all **media** files(fonts, pictures, textures).
