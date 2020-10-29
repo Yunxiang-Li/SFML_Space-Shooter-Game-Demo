@@ -54,6 +54,8 @@ The whole project contains four main folders, **Screenshots and GIFs** folder, *
 
 2. **Command.cpp**
 
+3. **CommandQueue.cpp**
+
 (Needs to be updated...) **include** folder contains altogether **15** `C++` header files:
 
 **Media** folder contains all **media** files(fonts, pictures, textures).
