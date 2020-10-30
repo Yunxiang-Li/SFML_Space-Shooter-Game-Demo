@@ -54,87 +54,9 @@ The whole project contains four main folders, **Screenshots and GIFs** folder, *
 
 **Screenshots and GIFs** folder contains all screenshots and GIFs needed for exhibition.
 
-(Needs to be updated...) **src** folder contains altogether **17** `C++` source files:
+(Needs to be updated...) **src** folder contains altogether **17** `C++` source(**.cpp**) files:
 
-1. **Aircraft.cpp**
-
-2. **Application.cpp**
-
-3. **Command.cpp**
-
-4. **CommandQueue.cpp**
-
-5. **Entity.cpp**
-
-6. **GameState.cpp**
-
-7. **main.cpp**
-
-8. **MenuState.cpp**
-
-9. **PauseState.cpp**
-
-10. **Player.cpp**
-  
-11. **SceneNode.cpp**
-
-12. **SpriteNode.cpp**
-
-13. **State.cpp**
-
-14. **StateStack.cpp**
-
-15. **TitleState.cpp**
-
-16. **Utility.cpp**
-
-17. **World.cpp**
-
-(Needs to be updated...) **include** folder contains altogether **22** `C++` header files:
-
-1. **Aircraft.hpp**
-
-2. **Category.hpp**
-
-3. **Command.hpp**
-
-4. **CommandQueue.hpp**
-
-5. **Entity.hpp**
-
-6. **GameState.hpp**
-
-7. **MenuState.hpp**
-
-8. **PauseState.hpp**
-
-9. **GameState.hpp**
-
-10. **Player.hpp**
-
-11. **ResourceHolder.hpp**
-
-12. **ResourceHolder.inl**
-
-13. **ResourceIdentifiers.hpp**
-
-14. **SceneNode.hpp**
-
-15. **SpriteNode.hpp**
-
-16. **State.hpp**
-
-17. **StateIdentifiers.hpp**
-
-18. **StateStack.hpp**
-
-19. **TitleState.hpp**
-
-20. **Utility.hpp**
-
-21. **Utility.inl**
-
-22. **World.hpp**
+(Needs to be updated...) **include** folder contains altogether **22** `C++` header(20 **.hpp** files and 2 **.inl** files) files:
 
 **Media** folder contains all **media** files(fonts, pictures, textures).
 
