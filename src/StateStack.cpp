@@ -3,7 +3,6 @@
 
 // Include C++ standard headers.
 #include <cassert>
-#include <iostream>
 
 /**
  * Constructor of StateStack class.
@@ -23,7 +22,6 @@ StateStack::StateStack(State::Context context)
  */
 void StateStack::update(sf::Time dt)
 {
-  std::cout << mStack.size() << std::endl;
   // Iterate from top to bottom, stop as soon as update() returns false
   for (auto itr = mStack.rbegin(); itr != mStack.rend(); ++itr)
   {
