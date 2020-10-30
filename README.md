@@ -72,6 +72,8 @@ The whole project contains four main folders, **Screenshots and GIFs** folder, *
 
 (Needs to be updated...) **include** folder contains altogether **15** `C++` header files:
 
+1. **Aircraft.hpp**
+
 **Media** folder contains all **media** files(fonts, pictures, textures).
 
 ## Maintainers
