@@ -40,7 +40,9 @@ I Use C++ language, [SFML(Simple and Fast Multimedia Library)](https://www.sfml-
 
 3. Use multiple inheritance to build the game world. `SceneNode` class as a virtual base class which controls the whole game world and each layer's entrance(for instance, background layer, air layer and son on). `SpriteNode` class is a derived class which inherits `SceneNode` class and take control of background settings. `Entity` class is a intermediate class which inherits `SceneNode` class and represents each entity in the game. `Aircraft` class is a derived class which inherits `Entity` class and take control of all aircraft objects' behaviour.
 
-4. Use Command pattern to handle each user event or real time input as a command, push each command into the command queue and execute and pop each front command one by one. 
+4. Use Command pattern to handle each user event or real time input as a command, push each command into the command queue and execute and pop each front command one by one later when we need to update and render the game. 
+
+5. Use more C++ template and inline files to write handy methods(`toString`, `CenterOrgin` and so on) to help us reduce redundant codes and meanwhile provide useful functions we need. 
 
 ## Structure
 
