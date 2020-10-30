@@ -44,6 +44,8 @@ I Use C++ language, [SFML(Simple and Fast Multimedia Library)](https://www.sfml-
 
 5. Use more C++ template and inline files to write handy methods(`toString`, `CenterOrgin` and so on) to help us reduce redundant codes and meanwhile provide useful functions we need. 
 
+6. Then I consider the game as different states. I create a **State** class indicates a general state and we have **TitleState**, **MenuState**, **GameState** and **PauseState** which inherit the **State** class. When the player play the game, the game state will change according to what player is doing and we push all states into a state stack and handle one by one per update.
+
 ## Structure
 
 (Here should be an UML model to display the structure of the program).
