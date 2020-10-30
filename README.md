@@ -82,6 +82,8 @@ The whole project contains four main folders, **Screenshots and GIFs** folder, *
 
 5. **Entity.hpp**
 
+6. **Game.hpp**
+
 **Media** folder contains all **media** files(fonts, pictures, textures).
 
 ## Maintainers
