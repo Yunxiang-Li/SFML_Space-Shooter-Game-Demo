@@ -1,5 +1,6 @@
 // Include project header files
 #include "Game.hpp"
+#include "Application.hpp"
 
 // Include C++ standard headers.
 #include <stdexcept>
@@ -9,9 +10,8 @@
 int main() {
   // Try to launch the game.
   try {
-    Game game;
-    // Launch the program
-    game.run();
+    Application app;
+    app.run();
 
   }
   // If fail, catch the exception.

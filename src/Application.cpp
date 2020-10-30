@@ -1,40 +1,52 @@
 // Project header files
-#include "Game.hpp"
+#include "Application.hpp"
+#include "Utility.hpp"
+#include "State.hpp"
+#include "StateIdentifiers.hpp"
+#include "TitleState.hpp"
+#include "GameState.hpp"
+#include "MenuState.hpp"
+#include "PauseState.hpp"
 #include "StringHelpers.hpp"
 
 // Initialize time for per frame to be 1/60 which means our game's FPS(frame per second) is 60.
-const sf::Time Game::TimePerFrame = sf::seconds(1.f/60.f);
+const sf::Time Application::TimePerFrame = sf::seconds(1.f/60.f);
 
-// Constructor of the Game object with members initialization list.
-Game::Game()
-    : mWindow(sf::VideoMode(640, 480), "Space Shooter", sf::Style::Close)
-    , mWorld(mWindow)
+/**
+ * Constructor of Application class.
+ */
+Application::Application()
+    : mWindow(sf::VideoMode(640, 480), "States", sf::Style::Close)
+    , mTextures()
+    , mFonts()
     , mPlayer()
-    , mFont()
+    , mStateStack(State::Context(mWindow, mTextures, mFonts, mPlayer))
     , mStatisticsText()
-    , mStatisticsUpdateTime(sf::Time(sf::Time::Zero))
+    , mStatisticsUpdateTime()
     , mStatisticsNumFrames(0)
 {
+  // If key repeat is enabled, we will receive repeated KeyPressed events while keeping a key pressed.
+  mWindow.setKeyRepeatEnabled(false);
 
-  // Try to import the Sansation.ttf file.
-  if (!mFont.loadFromFile("../Media/Sansation.ttf"))
-  {
-    // Else output error message.
-    std::cout <<"No ttf file found for the Sansation.ttf" << std::endl;
-    exit(EXIT_FAILURE);
-  }
+  // Load font and title screen texture.
+  mFonts.load(Fonts::Main, "../Media/Sansation.ttf");
+  mTextures.load(Textures::TitleScreen, "../Media/Textures/TitleScreen.png");
   // Set the graphical text's font.
-  mStatisticsText.setFont(mFont);
+  mStatisticsText.setFont(mFonts.get(Fonts::Main));
   // Set the graphical text's position.
   mStatisticsText.setPosition(5.f, 5.f);
   // Set the graphical text's character size.
-  mStatisticsText.setCharacterSize(10);
+  mStatisticsText.setCharacterSize(10u);
+  // Register all game states.
+  registerStates();
+  // Push current state(Title state) to the state stack.
+  mStateStack.pushState(States::Title);
 }
 
 /**
  * Main loop of the game.
  */
-void Game::run()
+void Application::run()
 {
   // Use a Clock object to control and get access to the elapsed time.
   sf::Clock clock;
@@ -50,9 +62,9 @@ void Game::run()
   while (mWindow.isOpen())
   {
     // Get the elapsed time and reset the clock.
-    sf::Time elapsedTime = clock.restart();
+    sf::Time dt = clock.restart();
     // Get the update interval.
-    timeSinceLastUpdate += elapsedTime;
+    timeSinceLastUpdate += dt;
     // We divide update interval to a bunch of time for per frame.
     // We deal with each time per frame.
     while (timeSinceLastUpdate >= TimePerFrame)
@@ -62,9 +74,13 @@ void Game::run()
       processInput();
       // Update the game for each frame.
       update(TimePerFrame);
+
+      // Check inside this loop, because stack might be empty before update() call
+      if (mStateStack.isEmpty())
+        mWindow.close();
     }
     // Update relative graphical texts per real frame according to the elapsed time.
-    updateStatistics(elapsedTime);
+    updateStatistics(dt);
     // Render the window.
     render();
   }
@@ -73,43 +89,38 @@ void Game::run()
 /**
  * This method handles user input. It polls the application window for any input events.
  */
-void Game::processInput()
+void Application::processInput()
 {
-  CommandQueue& commands = mWorld.getCommandQueue();
-  sf::Event event{};
-
+  sf::Event event;
   // Loop if there is still at least one event left.
   while (mWindow.pollEvent(event))
   {
     // Handle each event.
-    mPlayer.handleEvent(event, commands);
-
+    mStateStack.handleEvent(event);
     // Check if player wants to click the 'x' button and quit the game.
     if (event.type == sf::Event::Closed)
       mWindow.close();
-
   }
-  // Handle real time input.
-  mPlayer.handleRealtimeInput(commands);
 }
 
 /**
  * Move the spaceship according to what direction keys user has pressed.
+ * @param dt a sf::Time object indicates the time passed since last update time.
  */
-void Game::update(sf::Time elapsedTime)
+void Application::update(sf::Time dt)
 {
-  mWorld.update(elapsedTime);
+  mStateStack.update(dt);
 }
 
 /**
  * Render our game(sprites) to the screen.
  */
-void Game::render()
+void Application::render()
 {
   // Clear the entire 2d window with a default black color.
   mWindow.clear();
   // Draw the whole game world.
-  mWorld.draw();
+  mStateStack.draw();
   // Set view to be the current whole window(So text will always be in the top left corner).
   mWindow.setView(mWindow.getDefaultView());
   // Draw the Text exhibition of the current frame to the window.
@@ -120,11 +131,12 @@ void Game::render()
 
 /**
  * Update frame per second and time per update for us to debug. elapsedTime here means time interval since last update.
+ * @param dt a sf::Time object indicates the time passed since last update time.
  */
-void Game::updateStatistics(sf::Time elapsedTime)
+void Application::updateStatistics(sf::Time dt)
 {
   // Add this time's interval since last update to the interval left from previous times.
-  mStatisticsUpdateTime += elapsedTime;
+  mStatisticsUpdateTime += dt;
   // Add one frame.
   mStatisticsNumFrames += 1;
 
@@ -132,14 +144,21 @@ void Game::updateStatistics(sf::Time elapsedTime)
   if (mStatisticsUpdateTime >= sf::seconds(1.0f))
   {
     // Set frames per second and time per update.
-    mStatisticsText.setString(
-            // Frame per second.
-        "Frames / Second = " + toString(mStatisticsNumFrames) + "\n" +
-            // Average time (microseconds) for one update.
-            "Time / Update = " + toString(mStatisticsUpdateTime.asMicroseconds() / mStatisticsNumFrames) + "us");
+    mStatisticsText.setString("FPS: " + toString(mStatisticsNumFrames));
     // Minus one second.
     mStatisticsUpdateTime -= sf::seconds(1.0f);
     // Reset total frames to be zero.
     mStatisticsNumFrames = 0;
   }
+}
+
+/**
+ * Register all game states by initializing all the mStateStack member variable.
+ */
+void Application::registerStates()
+{
+  mStateStack.registerState<TitleState>(States::Title);
+  mStateStack.registerState<MenuState>(States::Menu);
+  mStateStack.registerState<GameState>(States::Game);
+  mStateStack.registerState<PauseState>(States::Pause);
 }

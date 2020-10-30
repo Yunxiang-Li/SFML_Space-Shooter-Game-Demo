@@ -3,8 +3,6 @@
 #include "CommandQueue.hpp"
 #include "Aircraft.hpp"
 
-// Include C++ standard headers.
-
 // A AircraftMover struct helps us to change the aircraft's velocity if an arrow key is pressed.
 struct AircraftMover
 {
