@@ -80,6 +80,8 @@ The whole project contains four main folders, **Screenshots and GIFs** folder, *
 
 4. **CommandQueue.hpp**
 
+5. **Entity.hpp**
+
 **Media** folder contains all **media** files(fonts, pictures, textures).
 
 ## Maintainers
