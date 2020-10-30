@@ -30,6 +30,8 @@ I Use C++ language, [SFML(Simple and Fast Multimedia Library)](https://www.sfml-
 
 [CLion Download](https://www.jetbrains.com/clion/download/#section=windows)<br>
 
+[SFML Tutorials](https://www.sfml-dev.org/tutorials/2.5/)
+
 ## Ideas
 
 1. Complete main game loop by processing each event and real time input while window is open and set time fixed for each frame using `sf::Clock` and `sf::Time` class provided by SFML.
