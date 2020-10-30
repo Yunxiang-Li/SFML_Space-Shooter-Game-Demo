@@ -17,7 +17,7 @@ TitleState::TitleState(StateStack& stack, Context context)
     , mShowText(true)
     , mTextEffectTime(sf::Time::Zero)
 {
-  // Set the background texture.
+  // Set the background sprite.
   mBackgroundSprite.setTexture(context.textures -> get(Textures::TitleScreen));
   // Set the text font.
   mText.setFont(context.fonts -> get(Fonts::Main));

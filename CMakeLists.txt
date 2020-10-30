@@ -30,9 +30,10 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 
 # Add the executable of the program
 add_executable(SpaceShooterGame src/main.cpp
-        src/Entity.cpp src/Aircraft.cpp src/SceneNode.cpp
+               src/Entity.cpp src/Aircraft.cpp src/SceneNode.cpp
                src/SpriteNode.cpp src/World.cpp src/Command.cpp src/Player.cpp
-               src/CommandQueue.cpp src/StateStack.cpp src/State.cpp src/Application.cpp src/GameState.cpp src/TitleState.cpp)
+               src/CommandQueue.cpp src/StateStack.cpp src/State.cpp src/Application.cpp
+               src/GameState.cpp src/TitleState.cpp src/MenuState.cpp)
 
 # Set linked libraries
 target_link_libraries(SpaceShooterGame PUBLIC sfml-system sfml-window sfml-graphics sfml-network sfml-audio)
