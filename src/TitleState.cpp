@@ -23,7 +23,7 @@ TitleState::TitleState(StateStack& stack, Context context)
   mText.setFont(context.fonts -> get(Fonts::Main));
   // Set the text string content.
   mText.setString("Press any key to start");
-  //
+  // Set title text's origin to be its center position.
   centerOrigin(mText);
   // Set the text position.
   mText.setPosition(context.window -> getView().getSize() / 2.f);

@@ -1,9 +1,7 @@
 // Include project header files
-#include "Game.hpp"
 #include "Application.hpp"
 
 // Include C++ standard headers.
-#include <stdexcept>
 #include <iostream>
 
 // Main entrance of the program

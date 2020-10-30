@@ -7,7 +7,6 @@
 #include "GameState.hpp"
 #include "MenuState.hpp"
 #include "PauseState.hpp"
-#include "StringHelpers.hpp"
 
 // Initialize time for per frame to be 1/60 which means our game's FPS(frame per second) is 60.
 const sf::Time Application::TimePerFrame = sf::seconds(1.f/60.f);
@@ -91,7 +90,7 @@ void Application::run()
  */
 void Application::processInput()
 {
-  sf::Event event;
+  sf::Event event{};
   // Loop if there is still at least one event left.
   while (mWindow.pollEvent(event))
   {

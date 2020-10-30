@@ -3,6 +3,7 @@
 
 // Include C++ standard headers.
 #include <cassert>
+#include <iostream>
 
 /**
  * Constructor of StateStack class.
@@ -22,6 +23,7 @@ StateStack::StateStack(State::Context context)
  */
 void StateStack::update(sf::Time dt)
 {
+  std::cout << mStack.size() << std::endl;
   // Iterate from top to bottom, stop as soon as update() returns false
   for (auto itr = mStack.rbegin(); itr != mStack.rend(); ++itr)
   {
@@ -65,7 +67,7 @@ void StateStack::handleEvent(const sf::Event& event)
  */
 void StateStack::pushState(States::ID stateID)
 {
-  mPendingList.push_back(PendingChange(Push, stateID));
+  mPendingList.emplace_back(PendingChange(Push, stateID));
 }
 
 /**
@@ -73,7 +75,7 @@ void StateStack::pushState(States::ID stateID)
  */
 void StateStack::popState()
 {
-  mPendingList.push_back(PendingChange(Pop));
+  mPendingList.emplace_back(PendingChange(Pop));
 }
 
 /**
@@ -81,7 +83,7 @@ void StateStack::popState()
  */
 void StateStack::clearStates()
 {
-  mPendingList.push_back(PendingChange(Clear));
+  mPendingList.emplace_back(PendingChange(Clear));
 }
 
 /**
