@@ -74,6 +74,8 @@ The whole project contains four main folders, **Screenshots and GIFs** folder, *
 
 1. **Aircraft.hpp**
 
+2. **Category.hpp**
+
 **Media** folder contains all **media** files(fonts, pictures, textures).
 
 ## Maintainers
