@@ -92,6 +92,8 @@ The whole project contains four main folders, **Screenshots and GIFs** folder, *
 
 10. **ResourceIdentifiers.hpp**
 
+11. **SceneNode.hpp**
+
 **Media** folder contains all **media** files(fonts, pictures, textures).
 
 ## Maintainers
