@@ -86,6 +86,8 @@ The whole project contains four main folders, **Screenshots and GIFs** folder, *
 
 7. **Player.hpp**
 
+8. **ResourceHolder.hpp**
+
 **Media** folder contains all **media** files(fonts, pictures, textures).
 
 ## Maintainers
