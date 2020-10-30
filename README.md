@@ -96,6 +96,8 @@ The whole project contains four main folders, **Screenshots and GIFs** folder, *
 
 12. **SpriteNode.hpp**
 
+13. **StringHelpers.hpp**
+
 **Media** folder contains all **media** files(fonts, pictures, textures).
 
 ## Maintainers
