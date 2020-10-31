@@ -52,13 +52,13 @@ I Use C++ language, [SFML(Simple and Fast Multimedia Library)](https://www.sfml-
 
 The whole project contains four main folders, **Screenshots and GIFs** folder, **Media** folder, **include** folder and **src** folder.
 
-**Screenshots and GIFs** folder contains all screenshots and GIFs needed for exhibition.
+1. **Screenshots and GIFs** folder contains all screenshots and GIFs needed for exhibition.
 
-**src** folder contains altogether **17** `C++` source(**.cpp**) files:
+2. **src** folder contains altogether **17** `C++` source(**.cpp**) files:
 
-**include** folder contains altogether **22** `C++` header(20 **.hpp** files and 2 **.inl** files) files:
+3. **include** folder contains altogether **22** `C++` header(20 **.hpp** files and 2 **.inl** files) files:
 
-**Media** folder contains all **media** files(fonts, pictures, textures).
+4. **Media** folder contains all **media** files(one font(.ttf) file and 4 texture(.png) files).
 
 ## Maintainers
 
