@@ -15,7 +15,7 @@ const sf::Time Application::TimePerFrame = sf::seconds(1.f/60.f);
  * Constructor of Application class.
  */
 Application::Application()
-    : mWindow(sf::VideoMode(640, 480), "States", sf::Style::Close)
+    : mWindow(sf::VideoMode(640, 480), "Space Shooter Game", sf::Style::Close)
     , mTextures()
     , mFonts()
     , mPlayer()
