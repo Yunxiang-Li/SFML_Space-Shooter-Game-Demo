@@ -34,7 +34,7 @@ add_executable(SpaceShooterGame src/main.cpp
                src/SpriteNode.cpp src/World.cpp src/Command.cpp src/Player.cpp
                src/CommandQueue.cpp src/StateStack.cpp src/State.cpp src/Application.cpp
                src/GameState.cpp src/TitleState.cpp src/MenuState.cpp src/PauseState.cpp
-               src/Utility.cpp src/LoadingState.cpp src/ParallelTask.cpp)
+               src/Utility.cpp)
 
 # Set linked libraries
 target_link_libraries(SpaceShooterGame PUBLIC sfml-system sfml-window sfml-graphics sfml-network sfml-audio)
