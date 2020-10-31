@@ -54,9 +54,9 @@ The whole project contains four main folders, **Screenshots and GIFs** folder, *
 
 **Screenshots and GIFs** folder contains all screenshots and GIFs needed for exhibition.
 
-(Needs to be updated...) **src** folder contains altogether **17** `C++` source(**.cpp**) files:
+**src** folder contains altogether **17** `C++` source(**.cpp**) files:
 
-(Needs to be updated...) **include** folder contains altogether **22** `C++` header(20 **.hpp** files and 2 **.inl** files) files:
+**include** folder contains altogether **22** `C++` header(20 **.hpp** files and 2 **.inl** files) files:
 
 **Media** folder contains all **media** files(fonts, pictures, textures).
 
