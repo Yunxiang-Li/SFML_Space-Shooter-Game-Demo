@@ -22,13 +22,13 @@ Game development comprises the combination of many different aspects such as gam
 
 ## Exhibition(Needs to be updated)
 
-[Exhibition](https://github.com/Yunxiang-Li/SFML_Space-Shooter-Game/blob/main/Screenshots%20and%20GIFs/Exhibition.gif)
+[!Exhibition](https://github.com/Yunxiang-Li/SFML_Space-Shooter-Game/blob/main/Screenshots%20and%20GIFs/Exhibition.gif)
 
-[Title](https://github.com/Yunxiang-Li/SFML_Space-Shooter-Game/blob/main/Screenshots%20and%20GIFs/Title.JPG)
+[!Title](https://github.com/Yunxiang-Li/SFML_Space-Shooter-Game/blob/main/Screenshots%20and%20GIFs/Title.JPG)
 
-[Game](https://github.com/Yunxiang-Li/SFML_Space-Shooter-Game/blob/main/Screenshots%20and%20GIFs/Game.JPG)
+[!Game](https://github.com/Yunxiang-Li/SFML_Space-Shooter-Game/blob/main/Screenshots%20and%20GIFs/Game.JPG)
 
-[Pause](https://github.com/Yunxiang-Li/SFML_Space-Shooter-Game/blob/main/Screenshots%20and%20GIFs/Pause.JPG)
+[!Pause](https://github.com/Yunxiang-Li/SFML_Space-Shooter-Game/blob/main/Screenshots%20and%20GIFs/Pause.JPG)
 
 ## Install
 
