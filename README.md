@@ -1,4 +1,4 @@
-# SFML_Space-Shooter-Gameav
+# SFML_Space-Shooter-Game
 
 A simple 2D space shooter game created by C++ and SFML(Simple and Fast Multimedia Library) with CLion IDE.
 
