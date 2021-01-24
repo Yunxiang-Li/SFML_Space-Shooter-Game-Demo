@@ -1,6 +1,6 @@
 # SFML_Space-Shooter-Game(Suspended)
 
-A simple 2D space shooter game created by C++ and SFML(Simple and Fast Multimedia Library) with CLion IDE.
+A simple 2D space shooter game demo created by C++ and SFML(Simple and Fast Multimedia Library) with CLion IDE.
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
