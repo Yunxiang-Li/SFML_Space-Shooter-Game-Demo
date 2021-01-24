@@ -1,4 +1,4 @@
-# SFML_Space-Shooter-Game(Suspended)
+# SFML_Space-Shooter-Game-Demo(Suspended)
 
 A simple 2D space shooter game demo created by C++ and SFML(Simple and Fast Multimedia Library) with CLion IDE.
 
