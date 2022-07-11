@@ -20,7 +20,7 @@ Unlike game engines such like Unity or Unreal, building game by pure C++ is not 
 
 Game development comprises the combination of many different aspects such as game logics, graphics, audio, user input, physics and much more. I want to learn and enjoy this whole process of game development by this project.
 
-## Exhibition(Needs to be updated)
+## Exhibition
 
 <div align="center"> <img src="https://github.com/Yunxiang-Li/SFML_Space-Shooter-Game/blob/main/Screenshots%20and%20GIFs/Exhibition.gif"/> </div>
 
@@ -38,7 +38,7 @@ I Use C++ language, [SFML(Simple and Fast Multimedia Library)](https://www.sfml-
 
 [SFML Tutorials](https://www.sfml-dev.org/tutorials/2.5/)
 
-## Ideas(Needs to be updated)
+## Ideas
 
 1. Complete main game loop by processing each event and real time input while window is open and set time fixed for each frame using `sf::Clock` and `sf::Time` class provided by SFML.
 
@@ -52,7 +52,7 @@ I Use C++ language, [SFML(Simple and Fast Multimedia Library)](https://www.sfml-
 
 6. Then I consider the game as different states. I create a **State** class indicates a general state and we have **TitleState**, **MenuState**, **GameState** and **PauseState** which inherit the **State** class. When the player play the game, the game state will change according to what player is doing and we push all states into a state stack and handle one by one per update.
 
-## Structure(Needs to be updated)
+## Structure
 
 (Here should be an UML model to display the structure of the program).
 
