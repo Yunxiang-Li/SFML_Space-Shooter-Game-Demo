@@ -6,7 +6,7 @@ A simple 2D space shooter game demo created by C++ and SFML(Simple and Fast Mult
 
 ## Table of Contents
 
-- [Background](background)
+- [Background](#background)
 - [Exhibition](#exhibition)
 - [Install](#install)
 - [Ideas](#ideas)
